@@ -9,6 +9,9 @@ const CounterScreen = () =>{
       <Button 
         title="Increase"
         onPress={() => {
+          // You never want to modify state directly...
+          // counter++ is BAD
+          // counter = counter + 1 is also BAD
           setCounter(counter + 1)
         }}
       />
