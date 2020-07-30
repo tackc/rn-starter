@@ -9,7 +9,10 @@ const [blue, setBlue] = useState(0);
 
   return (
     <View>
-      <ColorCounter color="Red" />
+      <ColorCounter
+        onIncrease={() => setRed(red + 1)}
+        onDecrease={() => setRed(red - 1)}
+        color="Red" />
       <ColorCounter color="Green" />
       <ColorCounter color="Blue" />
     </View>
