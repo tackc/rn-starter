@@ -9,11 +9,27 @@ const [red, setRed] = useState(0);
 const [green, setGreen] = useState(0);
 const [blue, setBlue] = useState(0);
 
+const setColor = (color, change) => {
+  // color === 'red', 'green' or 'blue'
+  // change === +15 or -15
+    switch(color) {
+      case 'red':
+        red + change > 255 || red + change < 0 ? null : setRed(red + change);
+        return;
+      case 'green':
+        green + change > 255 || green + change < 0 ? null : setGreen(green + change);
+        return;
+      case 'blue':
+        blue + change > 255 || blue + change < 0 ? null : setBlue(blue + change);
+        return;
+    }
+  };
+
   return (
     <View>
       <ColorCounter
-        onIncrease={() => setRed(red + COLOR_INCREMENT)}
-        onDecrease={() => setRed(red - COLOR_INCREMENT)}
+        onIncrease={() => setColor('red', COLOR_INCREMENT)}
+        onDecrease={() => setColor('red', -1 * COLOR_INCREMENT)}
         color="Red" />
       <ColorCounter
         onIncrease={() => setGreen(green + COLOR_INCREMENT)}
