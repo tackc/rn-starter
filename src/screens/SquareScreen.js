@@ -22,6 +22,8 @@ const setColor = (color, change) => {
       case 'blue':
         blue + change > 255 || blue + change < 0 ? null : setBlue(blue + change);
         return;
+      default:
+        return;
     }
   };
 
