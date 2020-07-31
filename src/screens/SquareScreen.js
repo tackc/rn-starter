@@ -5,13 +5,13 @@ import ColorCounter from '../components/ColorCounter';
 const COLOR_INCREMENT = 15;
 
 const SquareScreen = () => {
-const [red, setRed] = useState(0);
-const [green, setGreen] = useState(0);
-const [blue, setBlue] = useState(0);
+  const [red, setRed] = useState(0);
+  const [green, setGreen] = useState(0);
+  const [blue, setBlue] = useState(0);
 
-const setColor = (color, change) => {
-  // color === 'red', 'green' or 'blue'
-  // change === +15 or -15
+  const setColor = (color, change) => {
+    // color === 'red', 'green' or 'blue'
+    // change === +15 or -15
     switch(color) {
       case 'red':
         red + change > 255 || red + change < 0 ? null : setRed(red + change);
