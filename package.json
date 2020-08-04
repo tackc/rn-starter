@@ -23,6 +23,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "babel-preset-expo": "~8.0.0",
+    "logkitty": "^0.7.1",
     "mem": "^6.1.0",
     "yargs-parser": "^18.1.3"
   },
