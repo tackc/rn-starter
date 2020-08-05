@@ -11,10 +11,10 @@ const TextScreen = () => {
         style={styles.input}
         autoCapitalize="none"
         autoCorrect={false}
-        value={name}
-        onChangeText={(newText) => setName(newText)}
+        value={password}
+        onChangeText={(newText) => setPassword(newText)}
       />
-      {name.length >= 8 ? <Text>Your password must be at least 8 characters</Text> : null}
+      {password.length < 8 ? <Text>Your password must be at least 8 characters</Text> : null}
     </View>
   )
 };
