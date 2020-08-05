@@ -6,6 +6,7 @@ const TextScreen = () => {
 
   return (
     <View>
+      <Text>Enter Name:</Text>
       <TextInput 
         style={styles.input}
         autoCapitalize="none"
@@ -13,6 +14,7 @@ const TextScreen = () => {
         value={name}
         onChangeText={(newText) => setName(newText)}
       />
+      <Text>My name is {name}</Text>
     </View>
   )
 };
