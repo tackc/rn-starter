@@ -14,13 +14,25 @@ const BoxScreen = () => {
 const styles = StyleSheet.create({
   viewStyle: {
     borderWidth: 3,
-    borderColor: 'black'
+    borderColor: 'black',
+    height: 200,
+    // flexDirection: 'row',
+    // justifyContent: 'space-around'
+    alignItems: 'center'
   },
-  textStyle: {
-    borderWidth: 10,
+  textOneStyle: {
+    borderWidth: 3,
     borderColor: 'red',
-    margin: 20
-  }
+  },
+  textTwoStyle: {
+    borderWidth: 3,
+    borderColor: 'red',
+    alignSelf: 'stretch'
+  },
+  textThreeStyle: {
+    borderWidth: 3,
+    borderColor: 'red',
+  },
 });
 
 export default BoxScreen;
