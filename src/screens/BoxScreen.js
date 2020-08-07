@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     height: 200,
     // flexDirection: 'row',
     // justifyContent: 'space-around'
-    alignItems: 'center'
+    // alignItems: 'center'
   },
   textOneStyle: {
     borderWidth: 3,
