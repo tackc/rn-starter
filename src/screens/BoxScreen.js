@@ -16,21 +16,23 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderColor: 'black',
     height: 200,
-    // flexDirection: 'row',
-    // justifyContent: 'space-around'
+    flexDirection: 'row',
+    justifyContent: 'space-between'
     // alignItems: 'center'
   },
   textOneStyle: {
     borderWidth: 3,
     borderColor: 'red',
+    height: 100
   },
   textTwoStyle: {
     borderWidth: 3,
     borderColor: 'red',
+    height: 97,
     // You can tell a child element to fill its parent in 2 ways...
-    ...StyleSheet.absoluteFillObject,
+    // ...StyleSheet.absoluteFillObject,
     // position: 'absolute',
-    // top: 0,
+    top: 100,
     // right: 0,
     // bottom: 0,
     // left: 0,
@@ -39,6 +41,7 @@ const styles = StyleSheet.create({
   textThreeStyle: {
     borderWidth: 3,
     borderColor: 'red',
+    height: 100
   },
 });
 
