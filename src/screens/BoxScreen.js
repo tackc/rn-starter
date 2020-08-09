@@ -21,13 +21,11 @@ const styles = StyleSheet.create({
     // alignItems: 'center'
   },
   textOneStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
+    backgroundColor: 'red',
     height: 100
   },
   textTwoStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
+    backgroundColor: 'green',
     height: 97,
     // You can tell a child element to fill its parent in 2 ways...
     // ...StyleSheet.absoluteFillObject,
@@ -39,8 +37,7 @@ const styles = StyleSheet.create({
     fontSize: 18
   },
   textThreeStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
+    backgroundColor: 'purple',
     height: 100
   },
 });
